@@ -20,7 +20,7 @@
 | `config.py` | Load and validate app configuration (API keys, schedules, notification channels). |
 | `profile.py` | Normalize CV/profile data and expose helper queries (e.g., canonical skill list). |
 | `sources/base.py` | Define an abstract adapter interface (`search_jobs`, `apply`). |
-| `sources/linkedin.py`, `sources/justjoin.py`, etc. | Implement source-specific scraping/API logic. |
+| `sources/linkedin.py`, `sources/lever.py`, etc. | Implement source-specific scraping/API logic. |
 | `scoring.py` | Score matches using rule-based weights or LLM evaluation. |
 | `workflow.py` | Glue logic for search → approval → apply, orchestrated via a task queue or cron. |
 | `notifiers/email.py`, `notifiers/slack.py` | Channel-specific approval requests. |

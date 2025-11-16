@@ -3,7 +3,7 @@ job_sources:
     options:
       keywords: "C++"
       location: "Poland"
-      limit: 50
+      limit: 1000
       remote: true
       # Provide your LinkedIn li_at cookie via env var or direct string.
       session_cookie: "${LINKEDIN_LI_AT}"

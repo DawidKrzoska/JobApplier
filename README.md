@@ -13,7 +13,7 @@ See `docs/architecture.md` for the high-level design and roadmap.
 
 ## Project Layout
 - `src/jobapplier/` – core package (config, profile loader, scorers, storage, workflow).
-- `src/jobapplier/sources/` – job-board adapters (`mock.py` included as an example).
+- `src/jobapplier/sources/` – job-board adapters (LinkedIn included as an example).
 - `src/jobapplier/notifiers/` – approval channels (currently CLI).
 - `samples/` – example config/profile data wired to LinkedIn.
 - `.jobapplier-state.json` – runtime state (ignored until the agent runs).
@@ -59,5 +59,5 @@ See `docs/architecture.md` for the high-level design and roadmap.
 ## Next Ideas
 - Background scheduling via APScheduler or serverless cron.
 - Additional notifiers (Slack, email, Telegram).
-- Adapter implementations for Lever, Greenhouse, Indeed, etc.
+- Adapter implementations for Greenhouse, Indeed, etc.
 - Automated form filling using Playwright/Selenium with credential vault integration.
