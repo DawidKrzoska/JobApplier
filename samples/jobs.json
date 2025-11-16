@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mock-1",
+    "title": "Senior C++ RAN Engineer",
+    "company": "WaveCom",
+    "location": "Remote (Poland/EU)",
+    "url": "https://jobs.example.com/wavecom/ran",
+    "description": "Design and optimize 5G RAN controllers written in modern C++17. Work with STL/Boost, Kubernetes deployments, Redis caching layers, and GTest."
+  },
+  {
+    "id": "mock-2",
+    "title": "Real-Time Systems Developer",
+    "company": "Telestar Networks",
+    "location": "Wrocław, Poland",
+    "url": "https://jobs.example.com/telestar/rts",
+    "description": "Implement low-latency telecom services for state/fault management. Requires deep Linux debugging, Docker/Helm pipelines, and telecom domain knowledge."
+  },
+  {
+    "id": "mock-3",
+    "title": "5G Core Software Engineer",
+    "company": "Nordic Signal",
+    "location": "Stockholm, Sweden (Hybrid / Remote EU)",
+    "url": "https://jobs.example.com/nordicsignal/5g-core",
+    "description": "Build high-availability services in C++ for 5G core orchestration, integrating with Kubernetes, OpenStack, and CI using Git/Perforce."
+  }
+]

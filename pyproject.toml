@@ -1,0 +1,28 @@
+[project]
+name = "jobapplier"
+version = "0.1.0"
+description = "AI agent that searches for relevant jobs and applies upon approval."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "JobApplier Maintainers"}
+]
+dependencies = [
+  "typer>=0.12",
+  "rich>=13.7",
+  "pydantic>=2.5",
+  "PyYAML>=6.0",
+  "httpx>=0.25",
+  "beautifulsoup4>=4.12"
+]
+
+[project.scripts]
+jobapplier = "jobapplier.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

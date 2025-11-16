@@ -1,0 +1,17 @@
+job_sources:
+  - type: linkedin
+    options:
+      keywords: "C++"
+      location: "Poland"
+      limit: 1000
+      remote: true
+      # Provide your LinkedIn li_at cookie via env var or direct string.
+      session_cookie: AQEDASyj548AV0VrAAABmo0pNF4AAAGasTW4Xk0AHOzN0Y_bDkVebVK62DBIWg-XvhVF6F-rgrXIuBw5i3n0sonPzlnNRpQs9-u4mjiXpdOBRqBfNYF0wQWBzPI3zDFvo4BIfPMBCweNs8vKuhtqdQb_
+notifications:
+  channel: cli
+storage:
+  path: .jobapplier-state.json
+approvals:
+  min_score: 2
+scoring:
+  skill: 5

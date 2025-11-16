@@ -1,0 +1,40 @@
+name: Dawid Krzoska
+title: C++ Software Developer
+summary: >
+  C++ developer with 3+ years of experience building real-time systems for 5G
+  networks at Samsung. Skilled at debugging distributed services, deploying on
+  Kubernetes, and collaborating across telecom platform teams.
+skills:
+  - c++
+  - c++17
+  - stl
+  - boost
+  - gtest
+  - docker
+  - kubernetes
+  - helm
+  - redis
+  - confd
+  - openstack
+  - bash
+  - linux
+  - git
+  - perforce
+experience_years: 3
+locations:
+  preferred:
+    - Bielsko-Biała
+    - Poland
+    - Remote (EU)
+  avoid:
+    - Relocation outside EU
+keywords:
+  must:
+    - 5g
+    - real-time
+    - telecom
+  nice:
+    - distributed systems
+    - ran
+    - containerization
+salary_currency: PLN
