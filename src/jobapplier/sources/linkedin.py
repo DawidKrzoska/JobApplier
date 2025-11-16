@@ -51,7 +51,12 @@ class LinkedInJobSource:
             # Enables authenticated search result volumes.
             cookies["li_at"] = session_cookie
 
-        self.client = httpx.Client(headers=headers, cookies=cookies, timeout=timeout)
+        self.client = httpx.Client(
+            headers=headers,
+            cookies=cookies,
+            timeout=timeout,
+            follow_redirects=True,
+        )
 
     def _params(self, start: int) -> dict:
         params: dict = {"keywords": self.keywords, "start": start}

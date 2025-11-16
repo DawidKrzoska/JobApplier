@@ -5,7 +5,6 @@ AI agent that searches for roles matching your CV, asks for approval, and auto-a
 ## Current Capabilities
 - YAML-based profile ingestion that normalizes skills, locations, and preferences.
 - Declarative configuration for job sources, scoring weights, and notification channel.
-- Mock job-source adapter that reads structured postings (acts as a template for real connectors).
 - LinkedIn job-source adapter that scrapes public job-search pages (requires your own LinkedIn session cookie).
 - Heuristic scoring/ordering of results plus CLI approval workflow.
 - JSON state tracking to avoid re-surfacing the same job twice.
@@ -16,7 +15,7 @@ See `docs/architecture.md` for the high-level design and roadmap.
 - `src/jobapplier/` – core package (config, profile loader, scorers, storage, workflow).
 - `src/jobapplier/sources/` – job-board adapters (`mock.py` included as an example).
 - `src/jobapplier/notifiers/` – approval channels (currently CLI).
-- `samples/` – example config/profile data and mock job feed.
+- `samples/` – example config/profile data wired to LinkedIn.
 - `.jobapplier-state.json` – runtime state (ignored until the agent runs).
 
 ## Quickstart
@@ -25,7 +24,7 @@ See `docs/architecture.md` for the high-level design and roadmap.
    pip install -e .
    ```
 2. Adjust `samples/profile.yaml` to represent your CV (pre-filled with Dawid Krzoska's C++/5G profile as an example) and `samples/config.yaml` for job sources + approvals.
-3. Run one agent cycle (uses the mock data by default):
+3. Run one agent cycle (LinkedIn by default):
    ```bash
    PYTHONPATH=src python -m jobapplier.cli run \
      --config samples/config.yaml \
@@ -55,6 +54,7 @@ See `docs/architecture.md` for the high-level design and roadmap.
 - Provide your `li_at` cookie via environment variable (or set it directly) to mimic an authenticated session; unauthenticated sessions return far fewer jobs.
 - Use `--verbose` when running the CLI to print LinkedIn fetch/log messages (useful to confirm the HTTP request succeeds).
 - Auto-applying on LinkedIn typically requires browser automation, so the adapter currently surfaces job links and defers submission to you.
+
 
 ## Next Ideas
 - Background scheduling via APScheduler or serverless cron.

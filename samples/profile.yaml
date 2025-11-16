@@ -23,17 +23,14 @@ skills:
 experience_years: 3
 locations:
   preferred:
-    - Bielsko-Biała
-    - Poland
     - Remote (EU)
   avoid:
     - Relocation outside EU
 keywords:
-  must:
+  nice:
     - 5g
     - real-time
     - telecom
-  nice:
     - distributed systems
     - ran
     - containerization

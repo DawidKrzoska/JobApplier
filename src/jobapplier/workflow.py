@@ -14,7 +14,6 @@ from .storage import JsonStateStore
 
 # Ensure built-in adapters get registered.
 from .sources import linkedin as _linkedin  # noqa: F401
-from .sources import mock as _mock  # noqa: F401
 from .notifiers.cli import CliNotifier
 
 
